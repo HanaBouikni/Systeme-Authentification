@@ -9,12 +9,10 @@ Projet pédagogique en C illustrant la mise en place d'un système d'authentific
 ```
 .
 ├── auth.c          # Système d'authentification (inscription / connexion)
-├── auth.exe        # Exécutable compilé du système d'authentification
-├── attaque.c       # Outil de brute force contre le système d'authentification
-├── attaque.exe     # Exécutable compilé de l'outil d'attaque
-├── password.txt    # Base de données des identifiants (username:hash:salt)
-└── .vscode/        # Configuration de l'environnement de développement
+└── attaque.c       # Outil de brute force contre le système d'authentification
 ```
+
+Le fichier `password.txt` (base des identifiants) est créé automatiquement à la première inscription. Il n'est pas versionné, pas plus que les exécutables compilés.
 
 ## Fonctionnalités
 
@@ -51,9 +49,9 @@ username:hash:salt
 
 Exemple :
 ```
-islam:3491177128:69110
-naila:2851944493:32410
-hanaa:1147841512:75773
+alice:3491177128:69110
+bobby:2851944493:32410
+carol:1147841512:75773
 ```
 
 Le hash est calculé ainsi : `hash = simple_hash(password + salt)`.

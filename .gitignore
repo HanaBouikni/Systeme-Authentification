@@ -1,0 +1,23 @@
+# Système
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Éditeurs
+.vscode/
+.idea/
+*.swp
+
+# Secrets
+.env
+*.env
+*.pem
+*.key
+
+# Binaires C
+*.exe
+*.o
+*.out
+
+# Base d'identifiants générée à l'exécution
+password.txt
